@@ -1,5 +1,6 @@
 package cn.partytime.model;
 
+import cn.partytime.baseModel.BaseModel;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -10,7 +11,7 @@ import java.util.Date;
  * 敏感词
  */
 @Document(collection = "block_keyword")
-public class BlockKeyword {
+public class BlockKeyword extends BaseModel{
 
     @Field("_id")
     private String id;

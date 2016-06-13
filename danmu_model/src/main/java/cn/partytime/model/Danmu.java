@@ -1,13 +1,17 @@
 package cn.partytime.model;
 
+import cn.partytime.baseModel.BaseModel;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.Date;
 
 /**
  * Created by liuwei on 16/6/12.
+ * 弹幕实体
  */
-public class Danmu {
+@Document(collection = "danmu")
+public class Danmu extends BaseModel{
 
     @Field("_id")
     private String id;
