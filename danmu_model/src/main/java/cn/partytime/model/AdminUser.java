@@ -1,5 +1,6 @@
 package cn.partytime.model;
 
+import cn.partytime.baseModel.BaseModel;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -11,7 +12,7 @@ import java.util.Date;
  */
 
 @Document(collection = "admin_user")
-public class AdminUser {
+public class AdminUser extends BaseModel {
     @Field("_id")
     private String id;
 
@@ -22,6 +23,26 @@ public class AdminUser {
     private String nick;
 
     private Date createTime = new Date();
+
+    private String AdminUserCompanyId;
+
+    private String registIp;
+
+    private String lastLoginIp;
+
+    private Date lastLoginTime;
+
+    /**
+     * 创建账号的人
+     */
+    private String creatorId;
+
+
+    /**
+     * 最后更新时间
+     */
+    private Date lastUpdateTime;
+
 
     public String getId() {
         return id;
@@ -61,5 +82,53 @@ public class AdminUser {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getAdminUserCompanyId() {
+        return AdminUserCompanyId;
+    }
+
+    public void setAdminUserCompanyId(String adminUserCompanyId) {
+        AdminUserCompanyId = adminUserCompanyId;
+    }
+
+    public String getRegistIp() {
+        return registIp;
+    }
+
+    public void setRegistIp(String registIp) {
+        this.registIp = registIp;
+    }
+
+    public String getLastLoginIp() {
+        return lastLoginIp;
+    }
+
+    public void setLastLoginIp(String lastLoginIp) {
+        this.lastLoginIp = lastLoginIp;
+    }
+
+    public Date getLastLoginTime() {
+        return lastLoginTime;
+    }
+
+    public void setLastLoginTime(Date lastLoginTime) {
+        this.lastLoginTime = lastLoginTime;
+    }
+
+    public String getCreatorId() {
+        return creatorId;
+    }
+
+    public void setCreatorId(String creatorId) {
+        this.creatorId = creatorId;
+    }
+
+    public Date getLastUpdateTime() {
+        return lastUpdateTime;
+    }
+
+    public void setLastUpdateTime(Date lastUpdateTime) {
+        this.lastUpdateTime = lastUpdateTime;
     }
 }
