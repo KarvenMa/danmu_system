@@ -20,6 +20,9 @@ public class Danmu extends BaseModel{
     private Boolean isBlocked = false;
     private Integer type = 0;//0普通弹幕；1测试弹幕；2预制弹幕
     private Date created = new Date();
+    private String danmuPoolId;
+    private String userId;
+
 
     public String getId() {
         return id;
@@ -67,5 +70,21 @@ public class Danmu extends BaseModel{
 
     public void setType(Integer type) {
         this.type = type;
+    }
+
+    public String getDanmuPoolId() {
+        return danmuPoolId;
+    }
+
+    public void setDanmuPoolId(String danmuPoolId) {
+        this.danmuPoolId = danmuPoolId;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }

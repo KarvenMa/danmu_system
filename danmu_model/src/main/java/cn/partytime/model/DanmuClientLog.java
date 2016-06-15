@@ -2,6 +2,7 @@ package cn.partytime.model;
 
 import cn.partytime.baseModel.BaseModel;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.Date;
 
@@ -12,6 +13,7 @@ import java.util.Date;
 @Document(collection = "danmu_client_log")
 public class DanmuClientLog extends BaseModel{
 
+    @Field("_id")
     private String id;
 
     private Date createTime;
