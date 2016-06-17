@@ -26,6 +26,8 @@ public class AdminUserCompany extends BaseModel{
 
     private Date lastUpdateTime;
 
+    private String AdminUserId;
+
     public String getId() {
         return id;
     }
@@ -72,5 +74,13 @@ public class AdminUserCompany extends BaseModel{
 
     public void setLastUpdateTime(Date lastUpdateTime) {
         this.lastUpdateTime = lastUpdateTime;
+    }
+
+    public String getAdminUserId() {
+        return AdminUserId;
+    }
+
+    public void setAdminUserId(String adminUserId) {
+        AdminUserId = adminUserId;
     }
 }

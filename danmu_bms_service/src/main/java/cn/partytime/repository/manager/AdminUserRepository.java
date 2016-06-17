@@ -1,6 +1,8 @@
 package cn.partytime.repository.manager;
 
 import cn.partytime.model.AdminUser;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
@@ -9,4 +11,13 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
  */
 @EnableMongoRepositories(mongoTemplateRef = "managerMongoTemplate")
 public interface AdminUserRepository extends MongoRepository<AdminUser,String> {
+
+    AdminUser findByUserName(String userName);
+
+    AdminUser findByNick(String nick);
+
+    AdminUser findByUserNameAndPassword(String userName,String password);
+
+    Page<AdminUser> findAll(Pageable pageable);
+
 }

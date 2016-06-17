@@ -18,6 +18,11 @@ public class DanmuPool extends BaseModel {
 
     private Date createTime;
 
+    /**
+     * 弹幕池类型 0:普通弹幕池  1:预制弹幕池
+     */
+    private Integer type;
+
     public String getId() {
         return id;
     }
