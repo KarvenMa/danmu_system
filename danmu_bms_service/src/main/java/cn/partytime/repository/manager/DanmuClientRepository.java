@@ -10,4 +10,6 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @EnableMongoRepositories(mongoTemplateRef = "managerMongoTemplate")
 public interface DanmuClientRepository extends MongoRepository<DanmuClient,String> {
+
+    public DanmuClient findById(String id);
 }

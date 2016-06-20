@@ -10,4 +10,6 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @EnableMongoRepositories(mongoTemplateRef = "managerMongoTemplate")
 public interface BlockKeywordRepository extends MongoRepository<BlockKeyword,String> {
+
+    BlockKeyword findByWord(String word);
 }

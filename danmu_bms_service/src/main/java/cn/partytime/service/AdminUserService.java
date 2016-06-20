@@ -35,7 +35,7 @@ public class AdminUserService {
         }
 
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder(4);
-        String hashedPassword = passwordEncoder.encode(adminUser.getPassword());
+        String hashedPassword = passwordEncoder.encode(adminUser.getPassword().trim());
         adminUser.setPassword(hashedPassword);
         return  adminUserRepository.insert(adminUser);
     }
@@ -63,6 +63,7 @@ public class AdminUserService {
      * @return
      */
     public AdminUser login(String userName , String password){
+        //todo 登陆逻辑没有完成
         return adminUserRepository.findByUserNameAndPassword(userName, password);
     }
 
