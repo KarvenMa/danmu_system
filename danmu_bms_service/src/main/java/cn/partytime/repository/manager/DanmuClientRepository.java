@@ -12,4 +12,8 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 public interface DanmuClientRepository extends MongoRepository<DanmuClient,String> {
 
     public DanmuClient findById(String id);
+
+    public DanmuClient findByRegistCode(String registCode);
+
+    public DanmuClient findByDanmuClientCode(String danmuClientCode);
 }

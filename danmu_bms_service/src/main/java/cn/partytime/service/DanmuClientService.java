@@ -34,5 +34,12 @@ public class DanmuClientService {
         return danmuClientRepository.save(danmuClient);
     }
 
+    public DanmuClient findByRegistCode(String registCode){
+        return danmuClientRepository.findByRegistCode(registCode);
+    }
+
+    public DanmuClient findByDanmuClientCode(String danmuClientCode){
+        return danmuClientRepository.findByDanmuClientCode(danmuClientCode);
+    }
 
 }

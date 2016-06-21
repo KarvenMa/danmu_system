@@ -11,5 +11,13 @@
 
     <artifactId>danmu_bms_api</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>cn.party-time</groupId>
+            <artifactId>danmu_bms_service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
