@@ -16,7 +16,6 @@ public class DanmuPool extends BaseModel {
     @Field("_id")
     private String id;
 
-    private Date createTime;
 
     /**
      * 弹幕池类型 0:普通弹幕池  1:预制弹幕池
@@ -31,11 +30,11 @@ public class DanmuPool extends BaseModel {
         this.id = id;
     }
 
-    public Date getCreateTime() {
-        return createTime;
+    public Integer getType() {
+        return type;
     }
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
+    public void setType(Integer type) {
+        this.type = type;
     }
 }
