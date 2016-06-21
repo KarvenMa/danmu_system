@@ -19,7 +19,7 @@ public class DanmuClientService {
 
 
     public DanmuClient save(DanmuClient danmuClient){
-        return danmuClientRepository.save(danmuClient);
+        return danmuClientRepository.insert(danmuClient);
     }
 
     public void deleteById(String id){
@@ -28,6 +28,10 @@ public class DanmuClientService {
 
     public DanmuClient findById(String id){
         return danmuClientRepository.findById(id);
+    }
+
+    public DanmuClient updateById(DanmuClient danmuClient){
+        return danmuClientRepository.save(danmuClient);
     }
 
 
