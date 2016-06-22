@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@RequestMapping(value = "/adminUser")
+@RequestMapping(value = "v1/api/admin")
 @Slf4j
 public class AdminUserController {
 
@@ -30,17 +30,6 @@ public class AdminUserController {
 
         return null;
     }
-
-    @RequestMapping(value = "/clientlogin", method = RequestMethod.POST)
-    public RestResult clientlogin(String userName,String password){
-        AdminUser adminUser = adminUserService.login(userName,password);
-        if(null != adminUser){
-            return null;
-        }
-
-        return null;
-    }
-
 
 
 
