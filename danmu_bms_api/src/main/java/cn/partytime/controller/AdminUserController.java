@@ -32,6 +32,16 @@ public class AdminUserController {
         return null;
     }
 
+    @RequestMapping(value = "/clientlogin", method = RequestMethod.POST)
+    public RestResult clientlogin(String userName,String password){
+        AdminUser adminUser = adminUserService.login(userName,password);
+        if(null != adminUser){
+            return null;
+        }
+
+        return null;
+    }
+
 
 
 
