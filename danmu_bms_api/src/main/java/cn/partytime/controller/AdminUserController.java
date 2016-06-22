@@ -5,7 +5,6 @@ import cn.partytime.model.RestResult;
 import cn.partytime.service.AdminUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@RequestMapping(value = "/adminUser")
+@RequestMapping(value = "v1/api/admin")
 @Slf4j
 public class AdminUserController {
 
@@ -41,7 +40,6 @@ public class AdminUserController {
 
         return null;
     }
-
 
 
 
