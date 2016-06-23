@@ -19,7 +19,6 @@ public class Danmu extends BaseModel{
     private String msg;
     private Boolean isBlocked = false;
     private Integer type = 0;//0普通弹幕；1测试弹幕；
-    private Date created = new Date();
     private String danmuPoolId;
     private String userId;
 
@@ -54,14 +53,6 @@ public class Danmu extends BaseModel{
 
     public void setIsBlocked(Boolean isBlocked) {
         this.isBlocked = isBlocked;
-    }
-
-    public Date getCreated() {
-        return created;
-    }
-
-    public void setCreated(Date created) {
-        this.created = created;
     }
 
     public Integer getType() {

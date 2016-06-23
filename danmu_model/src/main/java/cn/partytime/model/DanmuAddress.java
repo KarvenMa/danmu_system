@@ -20,8 +20,6 @@ public class DanmuAddress extends BaseModel{
 
     private String creatoeId;
 
-    private Date createTime;
-
     public String getId() {
         return id;
     }
@@ -46,11 +44,4 @@ public class DanmuAddress extends BaseModel{
         this.creatoeId = creatoeId;
     }
 
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
 }

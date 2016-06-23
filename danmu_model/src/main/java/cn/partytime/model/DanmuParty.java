@@ -23,8 +23,6 @@ public class DanmuParty extends BaseModel {
 
     private String DanmuAddressId;
 
-    private Date createTime;
-
     private Date startTime;
 
     private Date endTime;
@@ -61,14 +59,6 @@ public class DanmuParty extends BaseModel {
 
     public void setDanmuAddressId(String danmuAddressId) {
         DanmuAddressId = danmuAddressId;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
     }
 
     public Date getStartTime() {

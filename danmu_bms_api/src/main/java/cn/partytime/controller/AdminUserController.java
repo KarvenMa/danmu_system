@@ -31,7 +31,6 @@ public class AdminUserController {
         return null;
     }
 
-
     @RequestMapping(value = "/testAdd", method = RequestMethod.GET)
     public  RestResult testAdd() {
         RestResult restResult = new RestResult();
@@ -42,8 +41,8 @@ public class AdminUserController {
             adminUser.setPassword("test" + i);
             adminUserService.save(adminUser);
         }
-
         return restResult;
+
     }
 
 }

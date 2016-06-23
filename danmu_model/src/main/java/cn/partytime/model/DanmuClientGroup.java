@@ -21,7 +21,6 @@ public class DanmuClientGroup extends BaseModel{
 
     private String creatorId;
 
-    private Date createTime;
 
     public String getCreatorId() {
         return creatorId;
@@ -31,13 +30,6 @@ public class DanmuClientGroup extends BaseModel{
         this.creatorId = creatorId;
     }
 
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
 
     public String getId() {
         return id;

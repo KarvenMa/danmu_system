@@ -22,8 +22,6 @@ public class AdminUser extends BaseModel {
 
     private String nick;
 
-    private Date createTime = new Date();
-
     private String AdminUserCompanyId;
 
     private String registIp;
@@ -50,14 +48,6 @@ public class AdminUser extends BaseModel {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
     }
 
     public String getNick() {

@@ -18,8 +18,6 @@ public class BlockKeyword extends BaseModel{
 
     private String word;
 
-    private Date createTime;
-
     private String creatorId;
 
 
@@ -37,14 +35,6 @@ public class BlockKeyword extends BaseModel{
 
     public void setWord(String word) {
         this.word = word;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
     }
 
     public String getCreatorId() {
