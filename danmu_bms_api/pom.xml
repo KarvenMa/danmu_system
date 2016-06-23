@@ -66,6 +66,8 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+<<<<<<< HEAD
+=======
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -79,6 +81,7 @@
             <type>pom</type>
         </dependency>
 
+>>>>>>> master
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongo-java-driver</artifactId>

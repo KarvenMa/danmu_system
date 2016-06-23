@@ -18,6 +18,9 @@
         <module>danmu_bms_api</module>
         <module>danmu_common</module>
         <module>danmu_model</module>
+
+        <module>danmu_collector_server</module>
+        <module>danmu_logic_model</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -58,4 +61,21 @@
         </plugins>
     </build>
     -->
+<<<<<<< HEAD
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+=======
+>>>>>>> master
 </project>
