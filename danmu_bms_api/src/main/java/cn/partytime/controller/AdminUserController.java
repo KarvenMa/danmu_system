@@ -32,6 +32,10 @@ public class AdminUserController {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     @RequestMapping(value = "/testAdd", method = RequestMethod.GET)
     public  RestResult testAdd() {
         RestResult restResult = new RestResult();
@@ -64,12 +68,16 @@ public class AdminUserController {
             return null;
 >>>>>>> origin/master
         }
-        return restResult;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         return null;
 >>>>>>> master
 >>>>>>> origin/master
+=======
+        return restResult;
+>>>>>>> master
     }
+
 }
