@@ -61,7 +61,11 @@
         </plugins>
     </build>
     -->
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
     <build>
         <plugins>
             <plugin>
@@ -76,5 +80,10 @@
             </plugin>
         </plugins>
     </build>
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> master
+>>>>>>> origin/master
 </project>
