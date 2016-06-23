@@ -31,6 +31,21 @@ public class AdminUserController {
         return null;
     }
 
+    @RequestMapping(value = "/testAdd", method = RequestMethod.GET)
+    public  RestResult testAdd(){
+        RestResult restResult = new RestResult();
+        for(int i=0;i<10;i++) {
+            AdminUser adminUser = new AdminUser();
+            adminUser.setNick("test" + i);
+            adminUser.setUserName("test" + i);
+            adminUser.setPassword("test"+i);
+            adminUserService.save(adminUser);
+        }
+        return restResult;
+
+
+    }
+
 
 
 }
