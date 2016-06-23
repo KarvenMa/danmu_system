@@ -31,6 +31,7 @@ public class AdminUserController {
         return null;
     }
 
+<<<<<<< HEAD
     @RequestMapping(value = "/testAdd", method = RequestMethod.GET)
     public  RestResult testAdd(){
         RestResult restResult = new RestResult();
@@ -44,6 +45,16 @@ public class AdminUserController {
         return restResult;
 
 
+=======
+    @RequestMapping(value = "/clientlogin", method = RequestMethod.POST)
+    public RestResult clientlogin(String userName,String password){
+        AdminUser adminUser = adminUserService.login(userName,password);
+        if(null != adminUser){
+            return null;
+        }
+
+        return null;
+>>>>>>> master
     }
 
 
