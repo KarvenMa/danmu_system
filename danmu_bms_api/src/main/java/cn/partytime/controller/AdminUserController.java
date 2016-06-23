@@ -31,7 +31,7 @@ public class AdminUserController {
         return null;
     }
 
-<<<<<<< HEAD
+
     @RequestMapping(value = "/testAdd", method = RequestMethod.GET)
     public  RestResult testAdd() {
         RestResult restResult = new RestResult();
@@ -41,35 +41,9 @@ public class AdminUserController {
             adminUser.setUserName("test" + i);
             adminUser.setPassword("test" + i);
             adminUserService.save(adminUser);
-=======
-<<<<<<< HEAD
-    @RequestMapping(value = "/testAdd", method = RequestMethod.GET)
-    public  RestResult testAdd(){
-        RestResult restResult = new RestResult();
-        for(int i=0;i<10;i++) {
-            AdminUser adminUser = new AdminUser();
-            adminUser.setNick("test" + i);
-            adminUser.setUserName("test" + i);
-            adminUser.setPassword("test"+i);
-            adminUserService.save(adminUser);
         }
+
         return restResult;
-
-
-=======
-    @RequestMapping(value = "/clientlogin", method = RequestMethod.POST)
-    public RestResult clientlogin(String userName,String password){
-        AdminUser adminUser = adminUserService.login(userName,password);
-        if(null != adminUser){
-            return null;
->>>>>>> origin/master
-        }
-        return restResult;
-
-<<<<<<< HEAD
-=======
-        return null;
->>>>>>> master
->>>>>>> origin/master
     }
+
 }
