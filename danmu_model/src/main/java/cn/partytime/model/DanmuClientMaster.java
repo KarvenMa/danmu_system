@@ -26,8 +26,6 @@ public class DanmuClientMaster extends BaseModel{
      */
     private String adminUserId;
 
-    private Date createTime;
-
     public String getId() {
         return id;
     }
@@ -52,11 +50,4 @@ public class DanmuClientMaster extends BaseModel{
         this.adminUserId = adminUserId;
     }
 
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
 }

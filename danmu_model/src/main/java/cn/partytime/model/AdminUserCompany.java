@@ -20,8 +20,6 @@ public class AdminUserCompany extends BaseModel{
 
     private String address;
 
-    private Date createDate;
-
     private String creatorId;
 
     private Date lastUpdateTime;
@@ -42,14 +40,6 @@ public class AdminUserCompany extends BaseModel{
 
     public void setCreatorId(String creatorId) {
         this.creatorId = creatorId;
-    }
-
-    public Date getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
     }
 
     public String getAddress() {

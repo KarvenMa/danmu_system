@@ -35,7 +35,6 @@ public class DanmuCollectorDanmuServiceImpl implements DanmuCollectorDanmuServic
         danmu.setMsg(msg);
         danmu.setIsBlocked(isBlockKey);
         danmu.setType(type);
-        danmu.setCreated(date);
         danmu.setDanmuPoolId(danmuPoolId);
         danmu.setUserId(userId);
         danmuService.save(danmu);

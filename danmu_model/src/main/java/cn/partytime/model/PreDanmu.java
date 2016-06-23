@@ -21,8 +21,6 @@ public class PreDanmu extends BaseModel {
 
     private String msg;
 
-    private Date createTime = new Date();
-
     private String danmuPoolId;
 
     private Date startTime;
@@ -49,14 +47,6 @@ public class PreDanmu extends BaseModel {
 
     public void setMsg(String msg) {
         this.msg = msg;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
     }
 
     public String getDanmuPoolId() {

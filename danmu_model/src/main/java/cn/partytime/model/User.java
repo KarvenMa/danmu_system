@@ -25,8 +25,6 @@ public class User {
 
     private String password;
 
-    private Date createTime;
-
     private Date lastLoginTime;
 
     private String registIp;
@@ -81,14 +79,6 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
     }
 
     public Date getLastLoginTime() {

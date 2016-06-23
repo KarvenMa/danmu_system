@@ -14,8 +14,6 @@ import java.util.List;
 @EnableMongoRepositories(mongoTemplateRef = "managerMongoTemplate")
 public interface PreDanmuRepository extends MongoRepository<PreDanmu,String> {
 
-    @Query("findAll().sort().skip()")
-    public List<PreDanmu> findByStartNum(int startNum);
 
 
 }
