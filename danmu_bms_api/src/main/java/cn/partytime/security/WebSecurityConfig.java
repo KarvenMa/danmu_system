@@ -1,4 +1,4 @@
-package cn.partytime.config;
+package cn.partytime.security;
 
 import cn.partytime.service.AdminUserService;
 import cn.partytime.service.CustomUserDetailsService;
