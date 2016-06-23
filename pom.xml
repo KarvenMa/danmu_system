@@ -61,6 +61,7 @@
         </plugins>
     </build>
     -->
+<<<<<<< HEAD
     <build>
         <plugins>
             <plugin>
@@ -75,4 +76,6 @@
             </plugin>
         </plugins>
     </build>
+=======
+>>>>>>> master
 </project>
